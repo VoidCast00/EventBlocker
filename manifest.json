@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "EventBlocker",
+  "version": "1.0",
+  "description": "blocks specific event listeners",
+  "content_scripts": [	{
+      "matches": ["*://*.spsehalova.edupage.org/*"], 
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+} 
